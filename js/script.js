@@ -10,7 +10,6 @@ function verifica() {
         if(user == utenti[i]){
             if(pass == password[i]){
                 err.classList.add("d-none");
-                console.log("acccesso");
                 return;
             } else {
                 err.classList.remove("d-none");
@@ -25,9 +24,9 @@ function verifica() {
 
 function rivelaPass() {
     let word = document.getElementById("password");
-     let icona = document.getElementById("rivela");
+    let icona = document.getElementById("rivela");
 
-    if (word.type === "password") {
+    if (word.type == "password") {
         word.type = "text";
         icona.classList.remove("bi-eye-slash");
         icona.classList.add("bi-eye");
